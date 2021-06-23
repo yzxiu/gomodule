@@ -1,7 +1,11 @@
 package pack1
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/google/uuid"
+)
 
 func P() {
-	fmt.Println("pack1")
+	id := uuid.New().String()
+	fmt.Println("UUID: ", id)
 }
